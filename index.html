@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>منصة سبيلا لمتابعة الحجاج</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.addons.css">
+
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout  col-12 p-0 fixed-top d-flex flex-row  ">
+
+      <!-- ICI Notification des alertes -->
+      <div class="navbar-menu-wrapper d-flex  align-items-center">
+
+        <ul class="navbar-nav navbar-nav-right">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-bell"></i>
+              <span class="count">4</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item">
+                <p class="mb-0 font-weight-normal float-left">You have 4 new notifications
+                </p>
+                <span class="badge badge-pill badge-warning float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="mdi mdi-alert-circle-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-medium text-dark">Application Error</h6>
+                  <p class="font-weight-light small-text">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="mdi mdi-comment-text-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-medium text-dark">Settings</h6>
+                  <p class="font-weight-light small-text">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="mdi mdi-email-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-medium text-dark">New user registration</h6>
+                  <p class="font-weight-light small-text">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+      <!-- ICI Logo sur sidebar -->
+      <div class="text-center col-2  logo-bar d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html">
+          <img src="images/logo.svg" alt="logo" />
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="index.html">
+          <img src="images/logo-mini.svg" alt="logo" />
+        </a>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="main-container">
+
+      <!-- Corps de la page -->
+    <div  class="row ressources">
+
+      <div class=" col-md-2" style="position: relative;margin-top: 10px;">
+        <h4 class="text-center" >توزع الكثافة في المشاعر</h4>
+        <div class="card" style="direction:rtl;margin-left: 14px;margin-top: 10px; background-color: #f2f8f9; border-radius: 10px;">
+          <h3 class="col-12 text-center" style="margin-bottom: 1rem; padding-left: 0;"> الحرم المكي <i class="fas fa-exclamation-triangle" id="ic1"></i></h3>
+          <div class="row" >
+            <div class="col-5" style="font-size: 11px;"> <label class="total">10000</label>السعة: </div>
+            <div class="col-6" style="font-size: 11px;" id="ici1" > </div>
+          </div>
+        </div>
+
+        <div class="card" style="direction:rtl;margin-left: 14px;margin-top: 10px; background-color: #f2f8f9; border-radius: 10px;">
+          <h3 class="col-12 text-center" style="margin-bottom: 1rem; padding-left: 0;"> منى <i class="fas fa-exclamation-triangle" style="color:orange;"></i></h3>
+          <div class="row" >
+            <div class="col-5" style="font-size: 11px;"><label class="total">10000</label> السعة:</div>
+            <div class="col-6" style="font-size: 11px;" > متواجد حاليا :5000</div>
+          </div>
+        </div>
+
+        <div class="card" style="direction:rtl;margin-left: 14px;margin-top: 10px; background-color: #f2f8f9; border-radius: 10px;">
+          <h3 class="col-12 text-center" style="margin-bottom: 1rem; padding-left: 0;"> المدينة المنورة <i class="fas fa-check-circle" style="color: green;"></i></h3>
+          <div class="row" >
+            <div class="col-5" style="font-size: 11px;"> السعة:10000</div>
+            <div class="col-6" style="font-size: 11px;" > متواجد حاليا :1000</div>
+          </div>
+        </div>
+      </div >
+
+
+
+
+
+      <div class="main-panel col-8">
+        <div class="content-wrapper col-md-12">
+
+
+          <div class="row purchace-popup">
+            <div class="col-12">
+              <span class="d-flex alifn-items-center filtrer">
+                <input type="text" class="filtre form-control empty" name="HajjId" id="HajjId" placeholder=" رقم الحاج">
+                <button type="submit" name="chercher" id="chercher" class="btn btn-primary mr-2">ابحث </button>
+                <button type="button"  data-toggle="modal" data-target="#BoosterRecherche" name="filtrer" id="filtrer" class="btn btn-success mr-2">عزز نتائج البحث</button>
+              </span>
+              <div class="spacer"></div>
+              <span class=" alifn-items-center collapse hide DetailsFiltre" id="details" >
+
+                   <div class="FiltreContent" id="FiltreCon">
+                    <label id="Filtre_"></label>
+                      <button type="button" class="close " aria-label="Close"/>
+                   </div>
+
+              </span>
+            </div>
+
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="BoosterRecherche" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="direction :rtl;">
+                  <h5 class="modal-title" id="exampleModalLabel" >إعدادت البحث</h5>
+                  <button type="button" class="close " data-dismiss="modal"  aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <!-- Formulaire-->
+                  <form class="form-sample">
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">المكان</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="lieu"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">المربع</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">جنسية</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>الجزائر</option>
+                              <option>مصر</option>
+                              <option>اليمن</option>
+                              <option>السعودية</option>
+                              <option>تونس</option>
+
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">الوفد</label>
+                          <div class="col-sm-9">
+                            <input class="form-control" placeholder="Group#" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+
+                  <!-- fin de formulaire -->
+
+
+                </div>
+                <div class="modal-footer" style="direction :rtl;">
+                  <button type="button" class="btn btn-secondary fermer " data-dismiss="modal">أغلق</button>
+                  <button type="button" class="btn btn-primary">احفظ التغيرات</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12" id="map" >
+
+            </div>
+
+          </div>
+
+
+
+          <div class="row">
+            <div class="card col-12">
+              <div class="card-body">
+                <h2 class="card-title text-center">تغيرات الكثافة بالحرم المكي</h2>
+                <canvas id="lineChart" style="height:250px"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
+              <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
+              <i class="mdi mdi-heart text-danger"></i>
+            </span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+      <!-- Sidebar Arabic -->
+      <nav class="col-2 sidebar sidebar-offcanvas  " id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <div class="nav-link">
+              <div class="user-wrapper">
+                <div class="profile-image">
+                  <img src="images/faces/face1.jpg" alt="profile image">
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">اسم الثلاثي</p>
+                  <div>
+                    <small class="designation text-muted">مهنة</small>
+                    <span class="status-indicator online"></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </li>
+          <li class="nav-item rightLi  ">
+            <a class="nav-link" href="index.html">
+              <i class="menu-icon mdi mdi-account"></i>
+              <span class="menu-title">متابعة الحشود</span>
+
+            </a>
+          </li>
+          <li class="nav-item rightLi  " style="color:black;">
+            <a class="nav-link" href="index.html">
+              <i class="menu-icon mdi mdi-account"></i>
+              <span class="menu-title">متابعة مقدمي الخدمات</span>
+
+            </a>
+          </li>
+          <li class="nav-item rightLi  " style="color:black;">
+            <a class="nav-link" href="index.html">
+              <i class="menu-icon mdi mdi-account"></i>
+              <span class="menu-title">معالجة المشاكل والانذارات</span>
+
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <script src="vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+
+  <!-- Script added By Sabila-->
+  <script>
+    $('#chercher').click(function(){
+        $(".DetailsFiltre").collapse('show');
+        $('#Filtre_').html( " رقم الحاج :  "+$('#HajjId').val()+" <i class=\"fa fa-window-close\" aria-hidden=\"true\" STYLE='margin-right: 100px;' ></i>");
+    });
+  </script>
+  <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=&libraries=visualization"> </script>
+  <script>
+
+    var markers=[];
+    var map;
+    $("#chercher").click(function(){
+        moveToLocation(21.434, 39.706);
+        map.setZoom(21);
+
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(21.434, 39.706),
+            map: map,
+            title:  'الحاج رقم '+$('#HajjId').val(),
+        });
+        markers.push(marker);
+
+        marker.addListener('click', function() {
+            alert(" الحاج رقم 109 ذو جنسية جزائرية متواجد بمنى");
+        });
+    });
+
+      function moveToLocation(lat, lng){
+          var center = new google.maps.LatLng(lat, lng);
+          // using global variable:
+          map.panTo(center);
+      }
+
+      var minNumber = 0;
+      var maxNumber = 10000;
+
+    var randomNumber = randomNumberFromRange(minNumber, maxNumber);
+
+    function randomNumberFromRange(min,max)
+    {
+        var result = 0;
+         result = Math.floor(Math.random()*(max-min+1)+min);
+        document.getElementById('ici1').innerHTML = result;
+        if(result > maxNumber/2)
+        {
+        document.getElementById('ic1').style.color = "red";
+        }
+        if (result < maxNumber/2)
+        {
+            document.getElementById('ic1').style.color ="green";
+        }
+        else
+        {
+            document.getElementById('ic1').style.color = "orange";
+        }
+
+
+    }
+
+
+
+
+
+
+      /* Data points defined as an array of LatLng objects */
+      var heatmapData = [
+          new google.maps.LatLng(21.434, 39.706),
+          new google.maps.LatLng(21.433, 39.704),
+          new google.maps.LatLng(21.43323, 39.715),
+          new google.maps.LatLng(21.43323, 39.710),
+          new google.maps.LatLng(21.43323, 39.712),
+          new google.maps.LatLng(21.43523, 39.714),
+          new google.maps.LatLng(21.46523, 39.71112),
+          new google.maps.LatLng(21.46523, 39.71123),
+          new google.maps.LatLng(21.46523, 39.71154),
+          new google.maps.LatLng(21.46523, 39.71176),
+          new google.maps.LatLng(21.46523, 39.718),
+          new google.maps.LatLng(21.46523, 39.718444),
+          new google.maps.LatLng(21.4652365, 39.718),
+          new google.maps.LatLng(21.46523, 39.71326),
+          new google.maps.LatLng(21.433234, 39.714),
+          new google.maps.LatLng(21.43323, 39.712),
+          new google.maps.LatLng(21.43323, 39.704),
+          new google.maps.LatLng(21.433212, 39.704123),
+          new google.maps.LatLng(21.433235, 39.704332),
+          new google.maps.LatLng(21.433232, 39.70442),
+          new google.maps.LatLng(21.4325, 39.716),
+          new google.maps.LatLng(21.435, 39.705),
+          new google.maps.LatLng(21.438, 39.702),
+          new google.maps.LatLng(21.436, 39.703),
+          new google.maps.LatLng(21.4362 , 39.70353),
+          new google.maps.LatLng(21.424, 39.701),
+          new google.maps.LatLng(21.429, 39.707),
+          new google.maps.LatLng(21.411, 39.708),
+
+      ];
+
+      var Mecca = new google.maps.LatLng(21.4362767, 39.7064575);
+
+      map = new google.maps.Map(document.getElementById('map'), {
+          center: Mecca,
+          zoom: 13,
+          mapTypeId: 'satellite'
+      });
+
+      var heatmap = new google.maps.visualization.HeatmapLayer({
+          data: heatmapData
+      });
+      heatmap.setMap(map);
+
+  </script>
+
+</body>
+
+</html>
